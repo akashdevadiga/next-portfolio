@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.scss";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -9,7 +10,8 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Akash S Devadiga - FrontEnd Developer",
-  description: "I'm a passionate Front-End Developer with a focus on building user-centric web experiences using React and Next.js. I enjoy crafting interactive UIs, functional web applications, and implementing creative solutions for complex problems.",
+  description:
+    "I'm a passionate Front-End Developer with a focus on building user-centric web experiences using React and Next.js. I enjoy crafting interactive UIs, functional web applications, and implementing creative solutions for complex problems.",
 };
 
 export default function RootLayout({ children }) {
@@ -26,7 +28,10 @@ export default function RootLayout({ children }) {
           href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
         />
       </head>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
