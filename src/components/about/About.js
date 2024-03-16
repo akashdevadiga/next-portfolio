@@ -1,6 +1,7 @@
 import "./about.css";
 // import AboutImg from "../../../public/assets/about.jpg";
-import AboutImg from "/public/assets/about.jpg";
+// import AboutImg from "/public/assets/about.jpg";
+import AboutImg from "/public/assets/profile10.jpg";
 // import CV from "../../../public/assets/John-Cv.pdf";
 import Info from './Info';
 import Image from "next/image";
@@ -11,16 +12,13 @@ const About = () => {
             <h2 className="section__title">About Me</h2>
             <span className="section__subtitle">My introduction</span>
             <div className="about__container container grid">
-                {/* <img src={AboutImg} alt="" className="about__img" /> */}
                 <Image src={AboutImg} alt="" className="about__img" width={"auto"} height={"auto"} />
                 <div className="about__data">
-                    <Info />
-                    <p className="about__description">Frontend
-                        developer, I create web pages with UI / UX user
-                        interface, I have years of experience and many
-                        clients are happy with the projects carried out.
+                    {/* <Info /> */}
+                    <p className="about__description">
+                    Namaste! I’m a Front-End Developer based in Bengaluru, India. With 5 years of experience, I specialize in crafting responsive, user-friendly, and visually engaging web interfaces. My joy lies in transforming design concepts into pixel-perfect code, collaborating with cross-functional teams, and building exceptional digital experiences.
                     </p>
-                    <a download="" href={"../../../public/assets/John-Cv.pdf"} className="button button--flex">
+                    <a download="" href={"/assets/Akash-Resume.pdf"} className="button button--flex">
                         Download CV
                         <svg
                             className="button__icon"

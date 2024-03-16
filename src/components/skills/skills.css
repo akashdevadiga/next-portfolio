@@ -7,9 +7,12 @@
 .skills__content {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     border-radius: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 .skills__title {
     font-size: var(--normal-font-size);
@@ -19,9 +22,23 @@
 }
 
 .skills__box {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    column-gap: 2.5rem;
+    column-gap: 2.5rem; */
+    align-items: center;
+    background: #d3d3d3;
+    border-radius: 8px;
+    display: flex;
+    flex: 0 1 18%;
+    height: 60px;
+    justify-content: space-evenly;
+    margin: 1%;
+    min-width: 140px;
+}
+
+.skills__box svg {
+    width: 27px;
+    height: 27px;
 }
 
 .skills__group {
@@ -61,6 +78,9 @@
 
 /* For medium devices */
 @media screen and (max-width: 576px) {
+    .skills__content {
+        justify-content: center;
+    }
     .skills__container {
         grid-template-columns: 1fr;
     }
