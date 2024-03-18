@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="https://akashdevadiga.in/" />
         <meta
           property="og:image"
-          content="https://akashdevadiga.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile10.6f9acfa3.jpg&w=640&q=75"
+          content="https://akashdevadiga.in/assets/Screenshot.jpeg"
         />
         <meta property="og:type" content="website" />
         {/* Optional but Recommended Meta Tags */}
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
         {/* Same description as OG */}
         <meta
           name="twitter:image"
-          content="https://akashdevadiga.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile10.6f9acfa3.jpg&w=1920&q=75"
+          content="https://akashdevadiga.in/assets/Screenshot.jpeg"
         />
         {/* Same image as OG */}
         <link
