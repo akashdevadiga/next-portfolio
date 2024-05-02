@@ -14,7 +14,7 @@ export const projectsData = [
         title: 'DeKoder',
         text: 'Election News WebApp',
         category: 'web',
-        url: 'https://ikweb-uat.roboso.com/'
+        url: 'https://www.dekoder.com/'
     },
     {
         id: 2,
